@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Análise I</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="fix.css" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+
+
+
+
+
+</head>
+<body>
+
+  <div id="sidebar">
+    <div id="sidemenu">
+    </div>
+  </div> <!--sidemenu-->
+
+
+
+
+
+<div id="content">
+
+  <h2>Semana 1</h2>
+
+  <h3>Conteúdo</h3>
+
+  <p>Na primeira semana fizemos os Capítulos I-II do livro de Terence
+    Tao. Mais precisamente, estudamos os seguintes tópicos:</p>
+  <ul>
+    <li>Motivação para estudar análise: exemplos de argumentos que
+      nos levam até resultados errados.</li>
+    <li>Números naturais: os axiomas de Peano.</li>
+    <li>Operações entre números naturais: adição e multiplicação.</li>
+    <li>Ordem entre números naturais.</li>
+</ul>
+
+<p>  O seguinte video no Youtube explica um dos exemplos
+  que apresentei na aula para illustrar que a soma de um
+  número infinito
+  de números não é comutativa. O video vem do canal <a href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg">Mathlogger</a> que tem muito conteúdo legal 
+sobre matemática.</p>
+
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-EtHF5ND3_s" frameborder="0" allowfullscreen></iframe>
+
+<p>O video está em inglês, mas é possível assistí-lo com legendas em português. Para obter as legendas faça o seguinte:</p>
+  <ul>
+    <li>inicie o video;</li>
+    <li> clique na engrenagem no canto inferior direito (<i>Settings/Configurações</i>);</li>
+    <li> clique em <i>Subtitle/Legendas</i> e escolha
+      <i>Spanish/Espanhol</i>;</li>
+    <li> Repeta os dois passos acima, mas desta vez escolha <i>Auto-translate</i>
+      em vez de <i>Spanish/Espanhol</i> e escolha <i>Português</i>
+      da lista.</li>
+  </ul>
+
+
+<h3>Exercícios</h3>
+
+<p>Nos seguintes exercícios tem de provar várias propriedades dos naturais.
+Tenha cuidado com usar nas demonstrações somente</p>
+<ul>
+  <li> os axiomas de Penao;</li>
+  <li> as definições da soma, do produto e da ordem;</li>
+  <li> as proposições já provadas.</li>
+</ul>
+
+
+<p>Recomendo que faça uma notinha para todo passo notando qual
+  axioma ou afirmação usou para realizar o passo em questão.</p>
+
+<p>1. Demonstre as seguintes propriedades para todo natural $a$, $b$, e
+  $c$:</p>
+  <ol>
+    <li> $a+0=a$; </li>
+    <li> $a+S(b)=S(a+b)$; </li>
+    <li> $a+b=b+a$ (comutativa); </li>
+    <li> $a+(b+c)=(a+b)+c$ (associativa); </li>
+    <li> se $a+b=a+c$, então $b=c$; se $a+b=c+b$, então
+      $a=c$ (cancelativa); </li>
+    <li> se $a$ é positivo, então $a+b$ é positivo; </li>
+    <li> se $a+b=0$, então $a=b=0$; </li>
+    <li> se $a$ é positivo, então existe precisamente
+    um natural $b$ tal que $a=S(b)$.</li>
+  </ol>
+
+
+<p> 2. Demonstre as seguintes propriedades da ordem para números
+  naturais $a$, $b$, e $c$:</p>
+  <ol>
+    <li>$a\leq a$ (reflexiva);</li>
+    <li>se $a\leq b$ e $b\leq c$, então $a\leq c$ (transitiva);</li>
+    <li>se $a\leq b$ e $b\leq a$, então $a=b$;</li>
+    <li>se $a\leq b$, então $a+c\leq b+c$;</li>
+    <li>$a&lt;b$ se e somente se $S(a)\leq b$;</li>
+   <li>$a&lt;b$ se e somente se existe um natural
+     positivo $c$ tal que $a+c=b$;</li>
+    <li>Precisamente um dos seguintes está válido: $a&lt;b$, $a=b$,
+      ou $b&lt;a$ (tricotonomia).</li>
+</ol>
+
+<p> 3. O <i>princípio forte da indução</i> afirma o seguinte:
+  Seja $m_0$ um número natural e seja $P(m)$ uma propriedade que
+  pode ser interpretada para números naturais. Assumamos que para todo
+  $m\geq m_0$ nós temos a seguinte implicação: se $P(m')$ está válodo
+  para todo natural $m'$ tal que $m_0\leq m'&lt; m$, então $P(m)$ está
+  válodo. Então podemos concluir que
+  $P(m)$ está válido para todo natural $m$.</p>
+
+<p> Demonstre o princípio forte da indução.</p>
+
+<p>4. Demonstre as seguintes propriedades da multiplicação
+  para todo natural $a$, $b$, e $c$.</p>
+  <ol>
+    <li> $1\cdot a=a$;</li>
+    <li> $ab=ba$ (comutativa);</li>
+    <li>$ab=0$ se e somente se  $a=0$ ou $b=0$; (não tem divisores de zero)
+    </li>
+    <li>$ab$ é positivo se e somente se $a$ e $b$ são positivos; </li>
+    <li>$a(b+c)=ab+ac$ e $(a+b)c=ac+bc$; (distributiva)</li>
+    <li>(ab)c=a(bc) (associativa);</li>
+    <li>se $a&lt;b$ e $c$ é positivo, então $ac&lt; bc$;</li>
+    <li>se $ac=bc$ e $c$ é positivo, então $a=b$; se
+      $ab=ac$ e $a$ é positivo, então $b=c$ (cancelativa). </li>
+   </ol>
+
+<p> 5. Demonstre o teorema de divisão: se $a$ e $b$ são naturais
+  com $b$ positivo, então existem unicamente $q$ e $r$ naturais tais que $a=bq+r$ e $0\leq r&lt; b$.</p>
+  
+
+  
+  <p>(c)2016 All rights reserved. Csaba Schneider. </p>
+</div>
+</body>
+</html>
